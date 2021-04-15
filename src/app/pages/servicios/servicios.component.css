@@ -1,0 +1,30 @@
+.section {
+    position: relative;
+    background: #F2EAE8;
+    padding-bottom: 100px;
+}
+
+.vector {
+    margin-top: -100px;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    background-size: 100% !important;
+    -webkit-mask-size: 100% !important;
+    background: url(../../../assets/img/vector-desktop.svg) center top no-repeat;
+    height: 100px;
+}
+
+.wrapper {
+    padding: 0 15px;
+    padding-bottom: 50px;
+}
+
+h2 {
+    text-align: center;
+    color: #343A40;
+    /* letter-spacing: 0.0em; */
+    /* word-spacing: 0.0em; */
+}

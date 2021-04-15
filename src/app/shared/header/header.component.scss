@@ -1,0 +1,100 @@
+.header {
+    padding: 1em 0;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    background: white;
+    &__logo {
+        align-self: center;
+        margin: 0;
+        padding-left: 10px;
+        color: #1a232f;
+    }
+    .button {
+        display: none;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+    @media screen and (min-width: 1024px) {
+        // border: 1px solid red;
+        .button {
+            display: inline;
+        }
+        &__content {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            // border: 1px solid red;
+        }
+    }
+}
+
+.menu {
+    // border: 1px solid red;
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    &__button {
+        // border: 1px solid green;
+        width: 40px;
+        height: 40px;
+        background: url('../../../assets/img/icon/icon-hamburger.svg') no-repeat center;
+    }
+    a {
+        text-decoration: none;
+        color: #1a232f;
+        padding: 0 .8em;
+        // background: #1a232f;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+    &__checkbox {
+        display: none;
+        &:checked {
+            &~.menu__button {
+                background: url('../../../assets/img/icon/icon-close.svg') no-repeat center;
+            }
+            &~.menu {
+                display: block;
+                position: absolute;
+                top: 100%;
+                padding: 1em;
+                left: 0;
+                right: 0;
+                height: 100vh;
+                background: linear-gradient(to bottom, #1a232f 0%, transparent 90%);
+                .menu__item {
+                    &:first-of-type a {
+                        padding-top: 2em;
+                        border-radius: .5em .5em 0 0;
+                    }
+                    &:last-of-type a {
+                        padding-bottom: 2em;
+                        border-radius: 0 0 .5em .5em;
+                    }
+                }
+                a {
+                    background: white;
+                    padding: .8em 1em;
+                    color: var(--darkBlue);
+                    font-size: 1.1em;
+                    display: block;
+                    text-align: center;
+                    flex: 1;
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        &__button {
+            display: none;
+        }
+    }
+}

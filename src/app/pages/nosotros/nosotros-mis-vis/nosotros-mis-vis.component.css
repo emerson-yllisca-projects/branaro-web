@@ -1,0 +1,98 @@
+.section {
+    position: relative;
+    background: #fff;
+}
+
+h3 {
+    font-family: 'Public Sans', sans-serif;
+    margin-bottom: 10px;
+}
+
+.wrapper {
+    padding: 0 15px;
+    padding-bottom: 120px;
+}
+
+hr {
+    height: 10px;
+    width: 70px;
+    margin: 0px;
+    background-color: #F4A261;
+    border-radius: 25px;
+    border: 0px;
+}
+
+.card {
+    margin-top: 30px;
+    background: #FFD9BC;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+.description {
+    font-size: .9rem;
+}
+
+.hr-title {
+    background: black;
+    width: 70px;
+    height: 1px;
+    margin: 0px;
+}
+
+@media screen and (min-width: 425px) {
+    .grid {
+        grid-template-columns: 6fr 6fr;
+    }
+    .wrapper {
+        max-width: 1140px;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .card .sub-grid {
+        display: flex;
+        flex-direction: row;
+    }
+    .card {
+        padding-left: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    img {
+        height: 100%;
+        border-radius: 10px 150px 150px 10px;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    hr {
+        width: 115px;
+    }
+    .title,
+    .description,
+    .hr-title {
+        margin-left: 20px;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .description {
+        font-size: 1.2rem;
+        margin-bottom: 0px;
+    }
+    .hr-title {
+        width: 120px;
+    }
+}

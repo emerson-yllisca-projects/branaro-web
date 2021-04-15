@@ -1,0 +1,88 @@
+.section {
+    background: url("../../../assets/img/icon/workplace-results-professional-report-accounting-during.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-position-y: 100%;
+    height: 85vh;
+}
+
+.wrapper {
+    padding: 0 10px;
+    padding-top: 100px;
+    padding-bottom: 0px;
+}
+
+h2 {
+    font-family: 'Bebas Neue', cursrive;
+    color: #fff;
+    font-size: 45px;
+}
+
+span {
+    color: #F4A261;
+}
+
+.boton-contactanos {
+    width: 100%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    border: 5px solid #fff;
+    background: transparent;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-contactanos:hover {
+    /* background: #0a65a7; */
+    background: #f56105;
+    border: 5px solid #fff;
+}
+
+img {
+    padding: 50px 0;
+    width: 100%;
+}
+
+.grid-pague {
+    display: grid;
+    grid-template-columns: 12fr;
+}
+
+.icon-w {
+    padding-right: 10px;
+}
+
+@media screen and (min-width: 425px) {
+    .wrapper {
+        max-width: 1140px;
+        margin: auto;
+    }
+    h2 {
+        font-size: 3.5rem;
+    }
+    .grid-pague {
+        grid-template-columns: 6fr 6fr;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .section {
+        height: 100vh;
+    }
+    .wrapper {
+        padding: 0 10px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+@media screen and (min-width: 1199px) {
+    h2 {
+        font-size: 4.5rem;
+    }
+}

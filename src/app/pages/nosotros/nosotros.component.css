@@ -1,0 +1,86 @@
+.section {
+    position: relative;
+    background: #F2EAE8;
+    padding-bottom: 100px;
+}
+
+.vector {
+    margin-top: -100px;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    background-size: 100% !important;
+    -webkit-mask-size: 100% !important;
+    background: url(../../../assets/img/vector-desktop.svg) center top no-repeat;
+    height: 100px;
+}
+
+.wrapper {
+    padding: 0 15px;
+    padding-bottom: 50px;
+}
+
+img {
+    max-width: 100%;
+    width: 500px;
+}
+
+h2 {
+    text-align: center;
+    color: #343A40;
+    /* letter-spacing: 0.0em; */
+    /* word-spacing: 0.0em; */
+}
+
+p {
+    font-family: 'Pathway Gothic One', sans-serif;
+    color: #3D3C3C;
+}
+
+.grid-pague {
+    display: grid;
+    grid-template-columns: 12fr;
+}
+
+@media screen and (min-width: 425px) {
+    .wrapper {
+        max-width: 1140px;
+        margin: auto;
+    }
+    .grid-pague {
+        grid-template-columns: 6fr 6fr;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    h2 {
+        font-size: 40px;
+    }
+    p {
+        font-size: 2rem;
+        padding-right: 20px;
+    }
+    .grid-pague {
+        padding-top: 100px;
+        padding-bottom: 200px;
+    }
+    .section {
+        margin-top: 150px;
+        position: relative;
+        background: #F2EAE8;
+    }
+    .vector {
+        margin-top: -330px;
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        background-size: 100% !important;
+        -webkit-mask-size: 100% !important;
+        background: url(../../../assets/img/vector-desktop.svg) center top no-repeat;
+        height: 330px;
+    }
+}
