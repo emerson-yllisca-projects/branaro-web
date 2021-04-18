@@ -10,7 +10,10 @@ h3 {
 
 .wrapper {
     padding: 0 15px;
-    padding-bottom: 120px;
+}
+
+.section {
+    padding-bottom: 170px;
 }
 
 hr {
@@ -94,5 +97,8 @@ img {
     }
     .hr-title {
         width: 120px;
+    }
+    .section {
+        padding-bottom: 330px;
     }
 }

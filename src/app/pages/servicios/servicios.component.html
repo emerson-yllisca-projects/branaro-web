@@ -1,19 +1,48 @@
 <section class="section">
     <div class="vector"></div>
+    <div class="puntos">
+        <img src="../../../assets/img/puntos-relleno-black.png" alt="">
+    </div>
     <div class="wrapper">
-        <h2>SERVICOS</h2>
+        <h2>SERVICIOS</h2>
         <hr>
-        <div class="glider-contain">
-            <div class="glider">
-                <div>your content here</div>
-                <div>your content here</div>
-                <div>your content here</div>
-                <div>your content here</div>
+        <div class="group-carrusel">
+            <button #previous class="carousel__button previous" id="previous" (click)="click(previous)"><i class="fas fa-angle-left"></i></button>
+            <div class="carousel">
+                <div class="carousel__images">
+                    <div class="card">
+                        <p>Presenta soluciones al instante y a medida</p>
+                        <img src="https://picsum.photos/seed/picsum/200/300" alt="">
+                    </div>
+                    <div class="card">
+                        <p>Mejora el servicio de tus clientes.</p>
+                        <img src="https://picsum.photos/200/300?grayscale" alt="">
+                    </div>
+                    <div class="card">
+                        <p>Mejora tus procesos y la calidad de tus servicios.</p>
+                        <img src="https://picsum.photos/id/870/200/300?grayscale&blur=2" alt="">
+                    </div>
+                    <div class="card">
+                        <p>Presenta soluciones al instante y a medida</p>
+                        <img src="https://picsum.photos/seed/picsum/200/300" alt="">
+                    </div>
+                    <div class="card">
+                        <p>Presenta soluciones al instante y a medida</p>
+                        <img src="https://picsum.photos/seed/picsum/200/300" alt="">
+                    </div>
+                    <div class="card">
+                        <p>Presenta soluciones al instante y a medida</p>
+                        <img src="https://picsum.photos/seed/picsum/200/300" alt="">
+                    </div>
+                    <div class="card">
+                        <p>Presenta soluciones al instante y a medida</p>
+                        <img src="https://picsum.photos/seed/picsum/200/300" alt="">
+                    </div>
+                </div>
             </div>
-
-            <button aria-label="Previous" class="glider-prev">«</button>
-            <button aria-label="Next" class="glider-next">»</button>
-            <div role="tablist" class="dots"></div>
+            <button #next class="carousel__button next" id="next" (click)="click(next)"><i class="fas fa-angle-right"></i></button>
         </div>
     </div>
 </section>
+
+<app-mapa-covertura></app-mapa-covertura>

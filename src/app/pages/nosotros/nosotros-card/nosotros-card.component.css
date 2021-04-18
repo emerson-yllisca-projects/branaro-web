@@ -82,8 +82,8 @@ hr {
     opacity: 1;
     transform: scale(1);
     position: absolute;
-    height: 40px;
-    width: 40px;
+    height: 33px;
+    width: 33px;
     border-radius: 50%;
     border: 0px;
     background: red;
@@ -97,28 +97,48 @@ hr {
     transform: scale(1.2);
 }
 
+.section .puntos {
+    display: none;
+}
+
 @media screen and (min-width: 425px) {
-    .grid {
-        grid-template-columns: 6fr 6fr;
-    }
     .wrapper {
         max-width: 1140px;
         margin: auto;
     }
+    .card .x-icon-button {
+        height: 40px;
+        width: 40px;
+    }
 }
 
 @media screen and (min-width: 768px) {
+    .grid {
+        grid-template-columns: 6fr 6fr;
+    }
     h3 {
         font-size: 2rem;
     }
     hr {
         width: 260px;
     }
+    .section .puntos {
+        position: absolute;
+        top: 0px;
+        right: -50px;
+        width: 230px;
+        height: 230px;
+        display: inherit;
+        /* border: 1px solid red; */
+    }
+    .section .puntos img {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 768px) {
     .vector {
-        margin-top: -330px;
+        margin-top: -250px;
         content: "";
         display: block;
         position: absolute;
@@ -127,7 +147,7 @@ hr {
         background-size: 100% !important;
         -webkit-mask-size: 100% !important;
         background: url(../../../../assets/img/vector-desktop-white.svg) center top no-repeat;
-        height: 330px;
+        height: 250px;
     }
     .card .sub-grid {
         display: flex;

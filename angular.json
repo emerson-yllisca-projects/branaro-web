@@ -28,11 +28,10 @@
                             "src/assets"
                         ],
                         "styles": [
-                            "src/styles.css",
-                            "src/assets/Glider.js-master/glider.min.css"
+                            "src/styles.css"
                         ],
                         "scripts": [
-                            "src/assets/Glider.js-master/glider.min.js"
+                            "node_modules/jquery/dist/jquery.min.js"
                         ]
                     },
                     "configurations": {

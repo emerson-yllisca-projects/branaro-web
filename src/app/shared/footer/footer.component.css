@@ -1,0 +1,59 @@
+.section {
+    /* padding-bottom: 30px; */
+    background: #F2EAE8;
+}
+
+.wrapper {
+    padding: 50px 15px;
+}
+
+h2 {
+    letter-spacing: 0.08em;
+    font-family: 'Staatliches', cursive;
+    font-size: 30px;
+    margin-top: 0px;
+    text-align: center;
+    color: #343A40;
+    margin-bottom: 8px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    padding: 0px;
+}
+
+.icons a {
+    display: flex;
+    align-items: center;
+    background: #F4A261;
+    color: #343A40;
+    border-radius: 50%;
+    width: 50px;
+    justify-content: center;
+    text-decoration: none;
+    height: 50px;
+    margin-right: 5px;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+}
+
+p {
+    text-align: center;
+}
+
+@media screen and (min-width: 425px) {
+    .wrapper {
+        max-width: 1140px;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 725px) {
+    h2 {
+        font-size: 40px;
+    }
+}

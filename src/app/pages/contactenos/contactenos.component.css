@@ -1,0 +1,146 @@
+.section {
+    position: relative;
+    /* padding-bottom: 0; */
+}
+
+.wrapper {
+    padding: 50px 15px;
+    padding-bottom: 50px;
+}
+
+h2 {
+    letter-spacing: 0.08em;
+    font-family: 'Staatliches', cursive;
+    font-size: 30px;
+    margin-top: 0px;
+    text-align: center;
+    color: #343A40;
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+.form-control input,
+textarea {
+    width: 95%;
+    padding: 8px 0px;
+    padding-left: 15px;
+    border: 1.5px solid #A8A4A4;
+    border-radius: 8px;
+    color: #5E5B5B;
+    background: #EEE8E8;
+    font-weight: bold;
+    font-family: 'Public Sans', sans-serif;
+}
+
+.form-control button {
+    width: 100%;
+    padding: 8px 0px 8px 5px;
+    color: #fff;
+    background: #37323E;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: bolder;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Public Sans', sans-serif;
+    color: #37323E;
+}
+
+.contact {
+    display: none;
+}
+
+.description {
+    text-align: center;
+    font-size: 17px;
+    display: none;
+}
+
+.title-form {
+    font-size: 20px;
+}
+
+@media screen and (min-width: 425px) {
+    .wrapper {
+        max-width: 1140px;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 725px) {
+    .contact {
+        display: contents;
+    }
+    .title-form {
+        padding-bottom: 20px;
+    }
+    .group-form {
+        margin-top: 40px;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+    }
+    .group-icons {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-left: 0px;
+    }
+    .title {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .group-icons .elemento-flex {
+        height: 50px;
+        flex-grow: 1;
+        padding: 25px 0px;
+        display: flex;
+    }
+    .group-icons .elemento-flex i {
+        padding: 20px;
+        padding-top: 10px;
+        font-size: 35px;
+        color: #37323E;
+    }
+    .group-icons .elemento-flex .title-card {
+        font-weight: bold;
+        font-size: 18px;
+    }
+    p {
+        margin: 0px;
+    }
+    .description {
+        text-align: center;
+        font-size: 17px;
+        display: contents;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    .title {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .form-group {
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+    }
+    .form-control input {
+        width: 90%;
+    }
+    textarea {
+        resize: none;
+        height: 60px;
+    }
+}

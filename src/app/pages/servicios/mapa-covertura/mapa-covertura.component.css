@@ -1,0 +1,121 @@
+.section {
+    position: relative;
+    background: #fff;
+}
+
+h3 {
+    font-family: 'Public Sans', sans-serif;
+    margin-bottom: 10px;
+}
+
+.wrapper {
+    padding: 0 15px;
+}
+
+.vector {
+    margin-top: -100px;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    background-size: 100% !important;
+    -webkit-mask-size: 100% !important;
+    background: url(../../../../assets/img/vector-desktop-white.svg) center top no-repeat;
+    height: 100px;
+}
+
+hr {
+    height: 10px;
+    width: 210px;
+    margin: 0px;
+    background-color: #F4A261;
+    border-radius: 25px;
+    border: 0px;
+}
+
+
+/* FORM */
+
+.group {
+    padding-top: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+select {
+    width: 98%;
+    padding: 8px 0px 8px 5px;
+    border: 1.5px solid black;
+    border-radius: 0px;
+    color: #737070;
+}
+
+button {
+    margin-top: 17px;
+    width: 100%;
+    padding: 8px 0px 8px 5px;
+    border: none;
+    border-radius: 20px;
+    background: #F4A261;
+    color: #fff;
+    font-size: 20px;
+}
+
+.mapa-covertura {
+    background: tomato;
+    width: 100%;
+    height: 350px;
+}
+
+@media screen and (min-width: 425px) {
+    .wrapper {
+        max-width: 1140px;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 725px) {
+    .mapa-covertura {
+        width: 100%;
+        height: 500px;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    hr {
+        height: 10px;
+        width: 360px;
+    }
+    form {
+        display: flex;
+        flex-direction: row;
+    }
+    select {
+        width: 400px;
+    }
+    button {
+        margin-left: 20px;
+        margin-top: 0px;
+        width: 150px;
+    }
+    .wrapper {
+        max-width: 1340px;
+        margin: auto;
+    }
+    .vector {
+        margin-top: -250px;
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        background-size: 100% !important;
+        -webkit-mask-size: 100% !important;
+        background: url(../../../../assets/img/vector-desktop-white.svg) center top no-repeat;
+        height: 250px;
+    }
+}
